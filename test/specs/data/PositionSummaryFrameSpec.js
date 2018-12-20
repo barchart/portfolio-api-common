@@ -335,8 +335,8 @@ describe('After the PositionSummaryFrame enumeration is initialized', () => {
 			ranges = PositionSummaryFrame.MONTHLY.getRanges(transactions);
 		});
 
-		it('should have three ranges (assuming the current year is 2018 and the current month is December)', () => {
-			expect(ranges.length).toEqual(3);
+		it('should have two ranges (assuming the current year is 2018 and the current month is December)', () => {
+			expect(ranges.length).toEqual(2);
 		});
 
 		it('the first range should be from 2018-09-30 to 2018-10-31', () => {
@@ -347,11 +347,6 @@ describe('After the PositionSummaryFrame enumeration is initialized', () => {
 		it('the second range should be from 2018-10-31 to 2018-11-30', () => {
 		  expect(ranges[1].start.format()).toEqual('2018-10-31');
 		  expect(ranges[1].end.format()).toEqual('2018-11-30');
-		});
-
-		it('the third range should be from 2018-10-31 to 2018-11-30', () => {
-			expect(ranges[2].start.format()).toEqual('2018-11-30');
-			expect(ranges[2].end.format()).toEqual('2018-12-31');
 		});
 	});
 
