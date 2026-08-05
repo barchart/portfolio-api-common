@@ -5,6 +5,8 @@
 
 A *public* library of shared JavaScript code used by Barchart's paper-trading portfolio system.
 
+**This repository is no longer in use. The single package contained in this repository has been moved into the monorepository at [@barchart/portfolio-public](https://github.com/barchart/portfolio-public). Consequently, this repository has been archived and is now in read-only mode. At some point, this repository will be deleted**
+
 ### Overview
 
 Simply put, this project contains code that runs on both the servers (i.e. Serverless applications) and clients (e.g. browser, mobile, etc).
